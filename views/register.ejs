@@ -1,0 +1,20 @@
+<div style="text-align: center; margin-top: 10%; width: 50%; 
+margin-left: 25%; background-color: rgb(207, 125, 122);">
+  <h1>Register</h1>
+  <form action="/register" method="post">
+    <div style="margin-bottom: 10px;">
+      <label for="name">Name</label>
+      <input style="margin-left: 22px;" type="text" id="name" name="name" required>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label for="email">Email</label>
+      <input style="margin-left: 22px;" type="email" id="email" name="email" required>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button style="width: 100px; background-color: rgb(30, 125, 203);" type="submit">Register</button>
+  </form>
+  <p style="display: inline;">Already have an account?</p>&nbsp;<a href="/login">Login</a>
+</div>

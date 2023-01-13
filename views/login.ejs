@@ -1,0 +1,20 @@
+<div style="text-align: center; margin-top: 10%; width: 50%; 
+margin-left: 25%; background-color: rgb(207, 125, 122);">
+  <h1>Login</h1>
+  <% if (messages.error) { %>
+    <%= messages.error %>
+  <% } %>
+  <form action="/login" method="post">
+    <div style="margin-bottom: 10px;">
+      <label for="email">Email</label>
+      <input style="margin-left:23px;" type="email" id="email" name="email" required>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button style="width: 100px; background-color: rgb(30, 125, 203);" type="submit">Login</button>
+  </form>
+   <p style="display: inline;">Not a member?</p> <a href="/register">Register</a>
+</div>
+
